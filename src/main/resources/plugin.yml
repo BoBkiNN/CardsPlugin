@@ -1,0 +1,6 @@
+name: Collectibilites
+version: '${project.version}'
+main: xyz.bobkinn_.collectibilites.Main
+api-version: 1.16
+authors: [ BoBkiNN_ ]
+description: Cards plugin for PrimLand
