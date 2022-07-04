@@ -5,6 +5,7 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
@@ -16,6 +17,9 @@ public class Handler implements Listener {
 
     @EventHandler
     public void onPlayerUse(PlayerInteractEvent event){
+        if (event.getAction() != Action.RIGHT_CLICK_AIR){
+            return;
+        }
         Player p = event.getPlayer();
         ItemStack clItem = event.getItem();
         if (clItem == null ||  clItem.getType() == Material.AIR){
@@ -30,8 +34,6 @@ public class Handler implements Listener {
         meta.setDisplayName("§b§lНеизвестная карта");
         meta.setLore(Arrays.asList("§eНажмите ПКМ для открытия", "описание"));
         cardItem.setItemMeta(meta);
-
-
 
         if (clItem.getType() == Material.DIAMOND){
             int amountOld = p.getInventory().getItemInMainHand().getAmount();

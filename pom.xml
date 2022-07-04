@@ -6,7 +6,7 @@
 
     <groupId>xyz.bobkinn_</groupId>
     <artifactId>collectibilites</artifactId>
-    <version>0.1-b6</version>
+    <version>0.1-b7</version>
     <packaging>jar</packaging>
 
     <name>Collectibilites</name>
