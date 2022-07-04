@@ -1,0 +1,22 @@
+{
+  "normal": {
+    "CMD": 1000000,
+    "name": "&b&lНеизвестная карта",
+    "lore": [
+      "&eНажмите ПКМ для открытия",
+      "описание дальше.."
+    ]
+  },
+  "common": {
+    "__comment":"обычные карты"
+  },
+  "rare": {
+    "__comment":"rare карты"
+  },
+  "epic": {
+    "__comment":"epic карты"
+  },
+  "legendary": {
+    "__comment":"legendary карты"
+  }
+}
