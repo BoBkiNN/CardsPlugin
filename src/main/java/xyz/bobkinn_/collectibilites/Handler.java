@@ -33,10 +33,10 @@ public class Handler implements Listener {
 
 
         if (clItem.getType() == Material.DIAMOND){
-            if (p.getInventory().getItemInMainHand().getAmount() == 1){
-                p.getInventory().remove(Material.DIAMOND);
-            } else {
+            if (p.getInventory().getItemInMainHand().getAmount() >= 1){
                 p.getInventory().getItemInMainHand().setAmount(p.getInventory().getItemInMainHand().getAmount()-1);
+            } else {
+                p.getInventory().remove(Material.DIAMOND);
             }
             event.getPlayer().getInventory().setItemInMainHand(cardItem);
         }
