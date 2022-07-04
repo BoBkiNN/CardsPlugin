@@ -26,7 +26,7 @@ public final class Main extends JavaPlugin {
         getConfig();
 
         new MainConfig(getPlugin(Main.class));
-        Bukkit.getPluginManager().registerEvents(new Handler(),this);
+        Bukkit.getPluginManager().registerEvents(new Handler(getPlugin(Main.class)),this);
         getLogger().info("Enabled!");
 
     }

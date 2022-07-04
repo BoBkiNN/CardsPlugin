@@ -5,15 +5,9 @@ public class Card {
     private String name;
     private String[] lore;
 
-    public void setCmd(int cmd) {
+    public Card(int cmd,String name, String[] lore){
         this.cmd = cmd;
-    }
-
-    public void setName(String name) {
         this.name = name;
-    }
-
-    public void setLore(String[] lore) {
         this.lore = lore;
     }
 
